@@ -1,0 +1,678 @@
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #222;
+}
+header h1,
+header p {
+  flex-basis: 80%;
+  margin: 0;
+}
+header h1 {
+  font-family: "Grand Hotel";
+  color: yellow;
+}
+header p {
+  color: white;
+  font-family: "Open Sans";
+}
+header form {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  top: -20px;
+}
+
+.content {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+.content aside {
+  width: 25%;
+  background-color: #222;
+  color: white;
+}
+.content aside nav {
+  font-size: x-large;
+}
+.content aside nav a {
+  color: white;
+}
+.content aside nav li {
+  line-height: 180%;
+}
+.content aside nav hr {
+  width: 80%;
+  margin: 0;
+  border: 1px solid yellow;
+}
+.content aside .copyright {
+  color: yellow;
+  font-family: "Grand Hotel";
+  position: absolute;
+  bottom: 0;
+}
+.content main .limonade {
+  padding: 2%;
+  background: url("../images/bg-presentation.jpg") no-repeat 400px;
+  background-size: contain;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.content main .limonade h1 {
+  color: white;
+  font-family: "Grand Hotel";
+  font-size: 55px;
+  width: 35%;
+}
+.content main .limonade p {
+  color: white;
+  width: 40%;
+  font-family: "Open Sans";
+  font-size: 20px;
+}
+.content main .limonade blockquote {
+  color: white;
+  font-size: 35px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.content main .limonade blockquote .quote {
+  font-style: italic;
+  text-align: right;
+}
+.content main .limonade blockquote .mag {
+  font-family: "Grand Hotel";
+  font-size: large;
+  margin: 0;
+}
+.content main .produits {
+  background-color: #eee;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.content main .produits h1 {
+  font-family: "Grand Hotel";
+  font-size: 55px;
+  flex-basis: 100%;
+}
+.content main .produits .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+.content main .produits .cards .product {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  border: 1px grey solid;
+  padding: 1%;
+  width: 25%;
+}
+.content main .produits .cards .product h2 {
+  font-family: "Grand Hotel";
+}
+.content main .produits .cards .more {
+  font-family: "Grand Hotel";
+  background-color: #222;
+  font-size: 30px;
+  padding: 0.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+}
+.content main .production {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: end;
+  color: white;
+  background: url("../images/bg-production.jpg") no-repeat center;
+  background-size: 100%;
+}
+.content main .production h1 {
+  font-family: "Grand Hotel";
+  font-size: 55px;
+  color: white;
+}
+.content main .production p {
+  font-size: 25px;
+  width: 32%;
+  text-align: right;
+}
+.content main .production .cards {
+  display: flex;
+}
+.content main .production .cards figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content main .production .more {
+  background-color: yellow;
+  color: #222;
+  padding: 0.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-family: "Grand Hotel";
+  font-size: 30px;
+}
+.content main .client {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.content main .client h1 {
+  font-family: "Grand Hotel";
+  font-size: 55px;
+}
+.content main .client .cards {
+  display: flex;
+  flex-direction: row;
+}
+.content main .client .cards figure {
+  display: flex;
+  align-items: center;
+}
+.content main .client .cards h2 {
+  font-family: "Grand Hotel";
+}
+.content main .client .more {
+  font-family: "Grand Hotel";
+  background-color: #222;
+  font-size: 30px;
+  padding: 0.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: white;
+  display: flex;
+  align-self: end;
+}
+.content main .contact {
+  background: url("../images/bg-contact.jpg") no-repeat top;
+  background-size: cover;
+  color: white;
+  padding: 2%;
+}
+.content main .contact h1 {
+  font-size: 55px;
+  font-family: "Grand Hotel";
+}
+.content main .contact form {
+  display: flex;
+  flex-direction: column;
+}
+.content main .contact form p {
+  width: 100%;
+}
+.content main .contact form p label {
+  width: 100%;
+  margin: 0 15px 0 0px;
+  display: inline-block;
+  font-size: 20px;
+}
+.content main .contact form p input[type=email],
+.content main .contact form p textarea {
+  width: 50%;
+}
+.content main .contact form p input[type=submit] {
+  float: right;
+  background-color: yellow;
+  color: #222;
+  padding: 0.5%;
+  padding-left: 6%;
+  padding-right: 6%;
+  font-family: "Grand Hotel";
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1500px) {
+  .content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .content main .limonade {
+    padding: 2%;
+    background: url("../images/bg-presentation.jpg") no-repeat 100px;
+    background-size: contain;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .limonade h1 {
+    color: white;
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    width: 35%;
+  }
+  .content main .limonade p {
+    color: white;
+    width: 40%;
+    font-family: "Open Sans";
+    font-size: 20px;
+  }
+  .content main .limonade blockquote {
+    color: white;
+    font-size: 35px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .content main .limonade blockquote .quote {
+    font-style: italic;
+    text-align: right;
+  }
+  .content main .limonade blockquote .mag {
+    font-family: "Grand Hotel";
+    font-size: large;
+    margin: 0;
+  }
+  .content main .produits {
+    background-color: #eee;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content main .produits h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    flex-basis: 100%;
+  }
+  .content main .produits .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content main .produits .cards .product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border: 1px grey solid;
+    padding: 1%;
+    width: 100%;
+  }
+  .content main .produits .cards .product h2 {
+    font-family: "Grand Hotel";
+  }
+  .content main .produits .cards .more {
+    font-family: "Grand Hotel";
+    background-color: #222;
+    font-size: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+  }
+  .content main .production {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    background: url("../images/bg-production.jpg") center;
+    background-size: cover;
+  }
+  .content main .production h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    color: white;
+  }
+  .content main .production p {
+    font-size: 25px;
+    width: 32%;
+    text-align: right;
+  }
+  .content main .production .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .production .cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content main .production .more {
+    background-color: yellow;
+    color: #222;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: "Grand Hotel";
+    font-size: 30px;
+  }
+  .content main .client {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content main .client h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+  }
+  .content main .client .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .client .cards figure {
+    display: flex;
+    align-items: center;
+  }
+  .content main .client .cards h2 {
+    font-family: "Grand Hotel";
+  }
+  .content main .client .more {
+    font-family: "Grand Hotel";
+    background-color: #222;
+    font-size: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    display: flex;
+    align-self: end;
+  }
+  .content main .contact {
+    background: url("../images/bg-contact.jpg") no-repeat top;
+    background-size: cover;
+    color: white;
+    padding: 2%;
+  }
+  .content main .contact h1 {
+    font-size: 55px;
+    font-family: "Grand Hotel";
+  }
+  .content main .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .contact form p {
+    width: 100%;
+  }
+  .content main .contact form p label {
+    width: 100%;
+    margin: 0 15px 0 0px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .content main .contact form p input[type=email],
+  .content main .contact form p textarea {
+    width: 50%;
+  }
+  .content main .contact form p input[type=submit] {
+    float: right;
+    background-color: yellow;
+    color: #222;
+    padding: 0.5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-family: "Grand Hotel";
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #222;
+  }
+  header h1,
+  header p {
+    flex-basis: 80%;
+    margin: 0;
+  }
+  header h1 {
+    font-family: "Grand Hotel";
+    color: yellow;
+  }
+  header p {
+    color: white;
+    font-family: "Open Sans";
+  }
+  header form {
+    display: none;
+  }
+  .content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+  }
+  .content aside {
+    width: 25%;
+    background-color: #222;
+    color: white;
+  }
+  .content aside nav {
+    font-size: x-large;
+  }
+  .content aside nav a {
+    color: white;
+  }
+  .content aside nav li {
+    line-height: 180%;
+  }
+  .content aside nav hr {
+    width: 80%;
+    margin: 0;
+    border: 1px solid yellow;
+  }
+  .content aside .copyright {
+    color: yellow;
+    font-family: "Grand Hotel";
+    position: absolute;
+    bottom: 0;
+  }
+  .content main .limonade {
+    padding: 2%;
+    background: url("../images/bg-presentation.jpg") no-repeat 400px;
+    background-size: contain;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .limonade h1 {
+    color: white;
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    width: 100%;
+  }
+  .content main .limonade p {
+    color: white;
+    width: 100%;
+    font-family: "Open Sans";
+    font-size: 20px;
+  }
+  .content main .limonade blockquote {
+    color: white;
+    font-size: 35px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .limonade blockquote .quote {
+    font-style: italic;
+  }
+  .content main .limonade blockquote .mag {
+    font-family: "Grand Hotel";
+    font-size: large;
+    margin: 0;
+  }
+  .content main .produits {
+    background-color: #eee;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content main .produits h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    flex-basis: 100%;
+  }
+  .content main .produits .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content main .produits .cards .product {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    border: 1px grey solid;
+    padding: 1%;
+    width: 100%;
+  }
+  .content main .produits .cards .product h2 {
+    font-family: "Grand Hotel";
+  }
+  .content main .produits .cards .more {
+    font-family: "Grand Hotel";
+    background-color: #222;
+    font-size: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+  }
+  .content main .production {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    background: url("../images/bg-production.jpg") center;
+    background-size: cover;
+  }
+  .content main .production h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+    color: white;
+  }
+  .content main .production p {
+    font-size: 25px;
+    width: 32%;
+    text-align: right;
+  }
+  .content main .production .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .production .cards figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content main .production .more {
+    background-color: yellow;
+    color: #222;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family: "Grand Hotel";
+    font-size: 30px;
+  }
+  .content main .client {
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .content main .client h1 {
+    font-family: "Grand Hotel";
+    font-size: 55px;
+  }
+  .content main .client .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .client .cards figure {
+    display: flex;
+    align-items: center;
+  }
+  .content main .client .cards h2 {
+    font-family: "Grand Hotel";
+  }
+  .content main .client .more {
+    font-family: "Grand Hotel";
+    background-color: #222;
+    font-size: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+    display: flex;
+    align-self: end;
+  }
+  .content main .contact {
+    background: url("../images/bg-contact.jpg") no-repeat top;
+    background-size: cover;
+    color: white;
+    padding: 2%;
+  }
+  .content main .contact h1 {
+    font-size: 55px;
+    font-family: "Grand Hotel";
+  }
+  .content main .contact form {
+    display: flex;
+    flex-direction: column;
+  }
+  .content main .contact form p {
+    width: 100%;
+  }
+  .content main .contact form p label {
+    width: 100%;
+    margin: 0 15px 0 0px;
+    display: inline-block;
+    font-size: 20px;
+  }
+  .content main .contact form p input[type=email],
+  .content main .contact form p textarea {
+    width: 50%;
+  }
+  .content main .contact form p input[type=submit] {
+    float: right;
+    background-color: yellow;
+    color: #222;
+    padding: 0.5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    font-family: "Grand Hotel";
+    font-size: 30px;
+  }
+}

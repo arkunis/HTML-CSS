@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(52, 105, 88);
+}
+
+.passougline{
+    color: white;
+    text-decoration: none;
+}
+.passougline:hover{
+    color: #7E3661;
+    text-decoration: none;
+}
+.visite{
+    color: white;
+    }
+    
+.visite:active{
+color: #FCB941;
+}
+
+.active, .active:visited{
+    font-size: 1.5em;
+    text-decoration: none;
+}

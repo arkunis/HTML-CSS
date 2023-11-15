@@ -1,0 +1,116 @@
+@import '_typo', '_couleurs', '_mixins';
+
+
+html{
+    background-image: url('../img/fond.webp');
+}
+.top {
+    float: right;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0.5%;
+}
+
+.clear {
+    clear: both;
+}
+
+#logo {
+    img {
+        width: 120px;
+        opacity: 0.5;
+    }
+}
+
+.uneligne {
+    display: flex;
+
+    #title-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: 2%;
+
+        h1,
+        h2 {
+            flex-basis: 100%;
+            font-family: $font;
+        }
+
+        h2 {
+            @include backgroundnoir;
+            margin: 0;
+        }
+        span{
+            opacity: 0.5;
+        }
+        h4{
+            font-family: $font;
+            opacity: 0.5;
+        }
+    }
+}
+
+.container{
+    margin: auto;
+    width: 970px;
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+
+    .card{
+        background-color: rgb(255, 240, 221);
+        width: 33%;
+        box-shadow: 6px 5px 5px 0px rgba(0,0,0,0.75);
+        .box{
+            float: left;
+            margin: 0;
+            padding: 2%;
+            .text-box{
+                text-align: center;
+                padding: 1%;
+                margin: 0;
+                color: white;
+            }
+            .text-box2, .text-box3, .text-box1{
+                @include cardpasfun;
+              
+            }
+        }
+        .photo-card{
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+        }
+        h3{
+            @include backgroundnoir;
+            @include h3courbe;
+        }
+        button{
+            @include backgroundnoir;
+            float: right;
+            margin: 4%;
+        }
+    }
+
+}
+.bottom{
+    @include backgroundnoir;
+    float: right;
+    font-family: $font;
+    font-size: small;
+}
+
+@media  screen and (max-width:1024px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .card{
+            margin-bottom: 3%;
+        }
+    }
+}

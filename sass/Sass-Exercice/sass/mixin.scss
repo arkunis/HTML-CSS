@@ -1,0 +1,12 @@
+@mixin backnoirmaispastrop{
+    background-color: #222;
+}
+@mixin buttonpasfou{
+    font-family: $fonhotem;
+    background-color: $noirmaispastrop;
+    font-size: 30px;
+    padding: 0.5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color:$blanc;
+}

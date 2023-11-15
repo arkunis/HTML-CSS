@@ -1,0 +1,326 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(135deg, #fff 0%, #fff 17%, #E9290F 17%, #E9290F 40%, #535353 40%, #535353 100%);
+
+}
+
+
+/* début mobile */
+@media screen and (max-width:1024px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+    }
+    
+    header {
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+    }
+    header a {
+        width: 12%;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 6.7%;
+    }
+    nav a {
+        width: 35%;
+        padding: 2%;
+    }
+
+    section[id="slider"] img{
+        width: 100%;
+    }
+    section[id="slider"] {
+        width: 100%;
+        padding: 2%;
+    }
+
+    /* team */
+section[id="team"]{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section[id="team"] .titre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+section[id="team"] img{
+    width: 100%;
+}
+section[id="team"] article{
+    display: flex;
+    width: 70%;
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 1%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section[id="team"] .titre{
+    flex-basis: 96%;
+    text-transform: uppercase;
+    color: white;
+}
+.titre hr{
+    color: white;
+    opacity: 50%;
+}
+article h2{
+    color:red;
+}
+article hr{
+    height: 2px;
+    background-color: red;
+    width: 90%;
+    border: none;
+}
+/* fin team */
+
+/* début connaitre */
+section[id="connaitre"]{
+    display: flex;
+    flex-direction: column;
+    
+align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+section[id="connaitre"] .titre{
+  
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+}
+h2{
+    padding: 2%;
+}
+h2 hr{
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border: none;
+}
+section[id="connaitre"] .texte{
+ 
+    color: white;
+}
+section[id="connaitre"] .social{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 2%;
+    zoom: 300%;
+    color:red;
+}
+
+section[id="connaitre"] article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+    width: 50%;
+}
+/* fin connaitre */
+
+}/* Fin mobile */
+
+
+
+/* début desktop */
+@media screen and (min-width:1024px){
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    header a {
+        width: 12%;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    nav {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+
+}
+nav a {
+    width: 100%;
+    padding: 2%;
+}
+
+section[id="slider"] img{
+    width: 100%;
+}
+section[id="slider"] {
+    width: 100%;
+}
+
+/* team */
+section[id="team"]{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+section[id="team"] img{
+    width: 100%;
+}
+section[id="team"] article{
+    display: flex;
+    width: 24%;
+    background-color: white;
+    margin-bottom: 2%;
+    padding: 1%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section[id="team"] .titre{
+    flex-basis: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+.titre hr{
+    color: white;
+    opacity: 50%;
+}
+article h2{
+    color:red;
+}
+article hr{
+    height: 2px;
+    background-color: red;
+    width: 90%;
+    border: none;
+}
+/* fin team */
+
+/* début connaitre */
+section[id="connaitre"]{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 96.9%;
+}
+section[id="connaitre"] .titre{
+    flex-basis: 100%;
+    text-transform: uppercase;
+    color: white;
+}
+section[id="connaitre"] .texte{
+    flex-basis: 10%;
+    color: white;
+}
+section[id="connaitre"] .social{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 70%;
+    align-items: center;
+    color: white;
+    zoom: 300%;
+    justify-content: space-evenly;
+    width: 40%;
+    color:red;
+}
+
+section[id="connaitre"] article{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: flex-start;
+    width: 50%;
+}
+/* fin connaitre */
+    
+}/* Fin desktop */
+
+
+
+
+
+/* début footer */
+footer{
+    width: 100%;
+    color: white;
+}
+footer section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+}
+footer p{
+text-align: center;
+}
+section .lienbas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 40%;
+}
+a{
+    color: white;
+    text-decoration: none;
+}

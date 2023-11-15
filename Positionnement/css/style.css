@@ -1,0 +1,59 @@
+html{
+    background-image: url('../img/fond.png');
+}
+body{
+    width:750px;
+    margin: 1em 32%;
+    background-color: #FFF;
+
+}
+h2{
+    color: rgb(160, 105, 3);
+    font-size: 24px;
+}
+p{
+    font-size: 16px;
+}
+header{
+    background-color: #ebd618;
+    padding: 2%;
+}
+nav{
+    padding-top: 5.5%;
+    font-family: 'Oswald', sans-serif;
+    float:right;
+    clear:both;
+}
+main{
+    padding: 2%;
+}
+nav a{
+    color: rgb(160, 105, 3);
+    padding-right: 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.hero{
+    float: left;
+    width: 40%;
+    padding-right: 1%;
+
+}
+.info{
+    float: right;
+    text-decoration: none;
+    color:white;
+    background:rgb(160, 105, 3); ;
+    padding: 1%;
+
+}
+.clear{
+    clear: both;
+}
+footer{
+    
+    position: absolute;
+    padding: 1%;
+    left: 45%;
+    bottom: 0;    
+}

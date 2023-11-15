@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-weight: bold;
+}
+
+main{
+    width: 70%;
+    margin: auto;
+}
+.imgafpa{
+    width: 30vh;
+}
+
+.letout{
+    border: 1px solid green;
+    border-radius: 12px;
+    padding: 1%;
+    margin: auto;
+}
+.colone{
+    display: flex;
+    flex-direction: row;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 2%;
+}
+
+button{
+    background-color:green;
+    padding: 1%;
+}
+
+.input>input{
+    margin-bottom: 3%;
+    height: 40px;
+}
+.input>select{
+    margin-bottom: 3%;
+    height: 40px;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid green;
+}
+.check, .choixbox, .checkbox{
+    margin-bottom: 3%;
+}

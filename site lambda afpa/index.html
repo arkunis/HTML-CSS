@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <main>
+        <header>
+            <img src="img/LOGO-AFPA-VERT-PNG.png" alt="afpa" class="imgafpa">
+        </header>
+        <section class="letout">
+                <form action="" method="get">
+
+                <section class="colone">
+                <article class="input">
+                    <input type="text" placeholder="Nom - Prénom" id="nom" name="nom">
+                    <input type="email" name="email" id="email" placeholder="Courriel">
+                    <input type="tel" name="phone" id="phone" placeholder="Téléphone">
+                    <select name="sexe" id="sexe">
+                        <option value="Vous êtes">Vous êtes</option>
+                        <option value="Homme">Homme</option>
+                        <option value="Femme">Femme</option>
+                    </select>
+
+                    <textarea name="commentaire" id="commentaire" cols="30" rows="10" placeholder="commentaire"></textarea>
+                </article>
+
+                <article class="texte">
+                    <div class="choixbox">
+                    <p name="choixbox">Quelle est la meilleure manière de vous contacter ?</p>
+                    <div>
+                    <input type="radio" name="contact" id="Telephone" value="Téléphone"><label for="Telephone">Téléphone</label>
+                    </div>
+
+                    <div>
+                    <input type="radio" name="contact" id="Couriel" value="Courriel"><label for="Couriel">Courriel</label>
+                    </div>
+                    </div>
+
+                    <div class="check">
+                    <p name="Checkchoix">Jours de la semaine où vous êtes disponible :</p>
+                    <div>
+                    <input type="checkbox" name="jour[]" id="Lundi" value="Lundi"><label for="Lundi">Lundi</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="jour[]" id="Mardi" value="Mardi"><label for="Mardi">Mardi</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="jour[]" id="Mercredi" value="Mercredi"><label for="Mercredi">Mercredi</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="jour[]" id="Jeudi" value="Jeudi"><label for="Jeudi">Jeudi</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="jour[]" id="Vendredi" value="Vendredi"><label for="Vendredi">Vendredi</label>
+                    </div>
+                    </div>
+
+                    <div class="checkbox">
+                    <p name="heure">Heure appropriée pour un rendez-vous :</p>
+                    <div>
+                    <input type="checkbox" name="Heure" id="Matin" value="Matin"><label for="Matin">Matin</label>
+                    </div>
+                    <div>
+                    <input type="checkbox" name="Heure" id="Aprem" value="Aprem"><label for="Aprem">Après-midi</label>
+                    </div>
+                </div>
+                </article>
+            </section>
+                <hr>
+                <button type="submit">Envoyer</button>
+                </form>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@mixin backgroundnoir {
+    background-color: $back;
+    color: white;
+    padding: 1%;
+}
+@mixin h3courbe{
+    text-align: center;
+    margin: 10%;
+    border-radius: 12px;
+    text-transform: uppercase;
+}
+
+@mixin cardpasfun{
+    background-color: red;
+    opacity: 0.8;
+    position: relative;
+    top: -25px;
+    margin: 0;
+}

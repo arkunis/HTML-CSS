@@ -1,0 +1,777 @@
+@import '_typo.scss', '_couleurs', 'mixin';
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include backnoirmaispastrop;
+
+    h1,
+    p {
+        flex-basis: 80%;
+        margin: 0;
+    }
+
+    h1 {
+        font-family: $fonhotem;
+        color: $jaune;
+    }
+
+    p {
+        color: $blanc;
+        font-family: $font2;
+    }
+
+    form {
+        display: flex;
+        justify-content: end;
+        position: relative;
+        top: -20px;
+    }
+}
+
+.content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+
+    aside {
+        width: 25%;
+        @include backnoirmaispastrop;
+        color: $blanc;
+
+        nav {
+            a {
+                color: $blanc;
+            }
+
+            li {
+                line-height: 180%;
+            }
+
+            hr {
+                width: 80%;
+                margin: 0;
+                border: 1px solid $jaune;
+            }
+
+            font-size: x-large;
+        }
+
+        .copyright {
+            color: $jaune;
+            font-family: $fonhotem;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+
+
+    main {
+        .limonade {
+            padding: 2%;
+            background: url('../images/bg-presentation.jpg') no-repeat 400px;
+            background-size: contain;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: $blanc;
+                font-family: $fonhotem;
+                font-size: $px55;
+                width: 35%;
+
+            }
+
+            p {
+                color: $blanc;
+                width: 40%;
+                font-family: $font2;
+                font-size: 20px;
+
+            }
+
+            blockquote {
+
+                color: $blanc;
+                font-size: 35px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .quote {
+                    font-style: italic;
+                    text-align: right;
+                }
+
+                .mag {
+                    font-family: $fonhotem;
+                    font-size: large;
+                    margin: 0;
+                }
+            }
+        }
+
+        .produits {
+            background-color: $beige;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                flex-basis: 100%;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: end;
+
+                .product {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    background-color: $blanc;
+                    border: 1px grey solid;
+                    padding: 1%;
+                    width: 25%;
+
+                    h2 {
+                        font-family: $fonhotem;
+                    }
+                }
+
+                .more {
+                    @include buttonpasfou;
+                }
+            }
+
+        }
+
+        .production {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: end;
+            color: $blanc;
+            background: url('../images/bg-production.jpg') no-repeat center;
+            background-size: 100%;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                color: $blanc;
+            }
+
+            p {
+                font-size: 25px;
+                width: 32%;
+                text-align: right;
+            }
+
+            .cards {
+                display: flex;
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .more {
+                background-color: $jaune;
+                color: $noirmaispastrop;
+                padding: 0.5%;
+                padding-left: 2%;
+                padding-right: 2%;
+                font-family: $fonhotem;
+                font-size: 30px;
+            }
+        }
+
+        .client {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h2 {
+                    font-family: $fonhotem;
+                }
+            }
+
+            .more {
+                @include buttonpasfou;
+                display: flex;
+                align-self: end;
+            }
+        }
+
+        .contact {
+            background: url('../images/bg-contact.jpg') no-repeat top;
+            background-size: cover;
+            color: $blanc;
+            padding: 2%;
+
+            h1 {
+                font-size: $px55;
+                font-family: $fonhotem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                        margin: 0 15px 0 0px;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+
+                    input[type="email"],
+                    textarea {
+                        width: 50%;
+                    }
+
+                    input[type="submit"] {
+                        float: right;
+                        background-color: $jaune;
+                        color: $noirmaispastrop;
+                        padding: 0.5%;
+                        padding-left: 6%;
+                        padding-right: 6%;
+                        font-family: $fonhotem;
+                        font-size: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+
+
+@media screen and (max-width:1500px) {
+  
+    .content {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+    main {
+        .limonade {
+            padding: 2%;
+            background: url('../images/bg-presentation.jpg') no-repeat 100px;
+            background-size: contain;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: $blanc;
+                font-family: $fonhotem;
+                font-size: $px55;
+                width: 35%;
+
+            }
+
+            p {
+                color: $blanc;
+                width: 40%;
+                font-family: $font2;
+                font-size: 20px;
+
+            }
+
+            blockquote {
+
+                color: $blanc;
+                font-size: 35px;
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+
+                .quote {
+                    font-style: italic;
+                    text-align: right;
+                }
+
+                .mag {
+                    font-family: $fonhotem;
+                    font-size: large;
+                    margin: 0;
+                }
+            }
+        }
+
+        .produits {
+            background-color: $beige;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                flex-basis: 100%;
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+
+                .product {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    background-color: $blanc;
+                    border: 1px grey solid;
+                    padding: 1%;
+                    width: 100%;
+
+                    h2 {
+                        font-family: $fonhotem;
+                    }
+                }
+
+                .more {
+                    @include buttonpasfou;
+                }
+            }
+
+        }
+
+        .production {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            color: $blanc;
+            background: url('../images/bg-production.jpg') center;
+            background-size: cover;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                color: $blanc;
+            }
+
+            p {
+                font-size: 25px;
+                width: 32%;
+                text-align: right;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .more {
+                background-color: $jaune;
+                color: $noirmaispastrop;
+                padding: 0.5%;
+                padding-left: 2%;
+                padding-right: 2%;
+                font-family: $fonhotem;
+                font-size: 30px;
+            }
+        }
+
+        .client {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h2 {
+                    font-family: $fonhotem;
+                }
+            }
+
+            .more {
+                @include buttonpasfou;
+                display: flex;
+                align-self: end;
+            }
+        }
+
+        .contact {
+            background: url('../images/bg-contact.jpg') no-repeat top;
+            background-size: cover;
+            color: $blanc;
+            padding: 2%;
+
+            h1 {
+                font-size: $px55;
+                font-family: $fonhotem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                        margin: 0 15px 0 0px;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+
+                    input[type="email"],
+                    textarea {
+                        width: 50%;
+                    }
+
+                    input[type="submit"] {
+                        float: right;
+                        background-color: $jaune;
+                        color: $noirmaispastrop;
+                        padding: 0.5%;
+                        padding-left: 6%;
+                        padding-right: 6%;
+                        font-family: $fonhotem;
+                        font-size: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+}
+@media screen and (max-width:1024px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        @include backnoirmaispastrop;
+    
+        h1,
+        p {
+            flex-basis: 80%;
+            margin: 0;
+        }
+    
+        h1 {
+            font-family: $fonhotem;
+            color: $jaune;
+        }
+    
+        p {
+            color: $blanc;
+            font-family: $font2;
+        }
+    
+        form {
+  display: none;
+        }
+    }
+
+    .content {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+
+        aside {
+            width: 25%;
+            @include backnoirmaispastrop;
+            color: $blanc;
+    
+            nav {
+                a {
+                    color: $blanc;
+                }
+    
+                li {
+                    line-height: 180%;
+                }
+    
+                hr {
+                    width: 80%;
+                    margin: 0;
+                    border: 1px solid $jaune;
+                }
+    
+                font-size: x-large;
+            }
+    
+            .copyright {
+                color: $jaune;
+                font-family: $fonhotem;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    
+
+    main {
+        .limonade {
+            padding: 2%;
+            background: url('../images/bg-presentation.jpg') no-repeat 400px;
+            background-size: contain;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                color: $blanc;
+                font-family: $fonhotem;
+                font-size: $px55;
+                width: 100%;
+
+            }
+
+            p {
+                color: $blanc;
+                width: 100%;
+                font-family: $font2;
+                font-size: 20px;
+
+            }
+
+            blockquote {
+
+                color: $blanc;
+                font-size: 35px;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+
+                .quote {
+                    font-style: italic;
+                }
+
+                .mag {
+                    font-family: $fonhotem;
+                    font-size: large;
+                    margin: 0;
+                }
+            }
+        }
+
+        .produits {
+            background-color: $beige;
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                flex-basis: 100%;
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: center;
+
+                .product {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    background-color: $blanc;
+                    border: 1px grey solid;
+                    padding: 1%;
+                    width: 100%;
+
+                    h2 {
+                        font-family: $fonhotem;
+                    }
+                }
+
+                .more {
+                    @include buttonpasfou;
+                }
+            }
+
+        }
+
+        .production {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            color: $blanc;
+            background: url('../images/bg-production.jpg') center;
+            background-size: cover;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+                color: $blanc;
+            }
+
+            p {
+                font-size: 25px;
+                width: 32%;
+                text-align: right;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+
+                figure {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .more {
+                background-color: $jaune;
+                color: $noirmaispastrop;
+                padding: 0.5%;
+                padding-left: 2%;
+                padding-right: 2%;
+                font-family: $fonhotem;
+                font-size: 30px;
+            }
+        }
+
+        .client {
+            padding: 2%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            h1 {
+                font-family: $fonhotem;
+                font-size: $px55;
+            }
+
+            .cards {
+                display: flex;
+                flex-direction: column;
+
+                figure {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h2 {
+                    font-family: $fonhotem;
+                }
+            }
+
+            .more {
+                @include buttonpasfou;
+                display: flex;
+                align-self: end;
+            }
+        }
+
+        .contact {
+            background: url('../images/bg-contact.jpg') no-repeat top;
+            background-size: cover;
+            color: $blanc;
+            padding: 2%;
+
+            h1 {
+                font-size: $px55;
+                font-family: $fonhotem;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    width: 100%;
+
+                    label {
+                        width: 100%;
+                        margin: 0 15px 0 0px;
+                        display: inline-block;
+                        font-size: 20px;
+                    }
+
+                    input[type="email"],
+                    textarea {
+                        width: 50%;
+                    }
+
+                    input[type="submit"] {
+                        float: right;
+                        background-color: $jaune;
+                        color: $noirmaispastrop;
+                        padding: 0.5%;
+                        padding-left: 6%;
+                        padding-right: 6%;
+                        font-family: $fonhotem;
+                        font-size: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+}
+}
