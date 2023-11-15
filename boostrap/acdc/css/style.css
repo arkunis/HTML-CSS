@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: black;
+}
+body{
+    background-image: linear-gradient(
+        130deg,
+        hsl(0deg 100% 43%) 1%,
+        hsl(0deg 100% 37%) 50%,
+        hsl(0deg 100% 30%) 50%,
+        hsl(0, 0%, 0%) 50%,
+        hsl(0deg 0% 0%) 99%
+      );
+}
