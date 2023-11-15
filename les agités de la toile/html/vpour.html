@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les agités de la toile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <nav class="bg-white border-gray-200 dark:bg-[#7587bf]">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="/" class="flex items-center">
+                    <img src="../img/logo-camera.png" class="h-8 mr-3" alt="Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Les agités de la
+                        toile</span>
+                </a>
+                <button data-collapse-toggle="navbar-default" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-800 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-default" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                    <ul
+                        class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-[#2F3640] md:dark:bg-[#7587bf] dark:border-[#f2c84b]">
+                        <li>
+                            <a href="../index.html"
+                                class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-[#f2c84b]"
+                                aria-current="page">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="gallerie.html"
+                                class="block py-2 pl-3 pr-4 text-[#2f3640] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#f2c84b] dark:hover:bg-[#f2c84b] dark:hover:text-black md:dark:hover:bg-transparent">Gallerie</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="block py-2 pl-3 pr-4 text-[#2f3640] rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-[#f2c84b] dark:hover:bg-[#f2c84b] dark:hover:text-black md:dark:hover:bg-transparent">Nous
+                                Contacter</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mx-auto">
+
+        <main class="m-3">
+            <nav class="flex mt-2" aria-label="Breadcrumb">
+                <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                    <li class="inline-flex items-center">
+                        <a href="../index.html"
+                            class="inline-flex items-center text-sm font-medium text-[#f2c84b] hover:text-[#f2c84b] dark:text-gray-800 dark:hover:text-[#7587bf]">
+                            <svg class="w-3 h-3 mr-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
+                            </svg>
+                            Accueil
+                        </a>
+                    </li>
+                    <li>
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <a href="gallerie.html"
+                                class="ml-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ml-2 dark:text-gray-600 dark:hover:text-[#7587bf]">Gallerie</a>
+                        </div>
+                    </li>
+                    <li aria-current="page">
+                        <div class="flex items-center">
+                            <svg class="w-3 h-3 text-gray-400 mx-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Film</span>
+                        </div>
+                    </li>
+                </ol>
+            </nav>
+
+
+            <section class="flex flex-col-reverse items-center md:flex-row m-5 gap-12">
+                <article class="w-[100%]">
+                    <h2 class="text-2xl mb-5">V pour VENDETTA</h2>
+                    <div class="flex flex-col lg:flex-row lg:gap-[20%]">
+                        <article class="lg:w-[35%]">
+                            <p class="m-2">
+                            <h3 class="text-xl"> Réalisateur :</h3> James McTeigue<br />
+                            Date de sortie : 19 avril 2006 <br />
+                            Genre : Action, Science fiction<br />
+                            Durée : 2h 10min </p>
+                        </article>
+                        <article class="m-2 lg:w-[100%]">
+                            <p class="">
+                            <h3 class="text-xl"> Acteurs :</h3>
+                            Natalie Portman<br>
+                            Hugo Weaving<br>
+                            Stephen Rea<br>
+                            Stephen Fry<br>
+                            Sinéad Cusack<br>
+                            Rupert Graves<br>
+                            Roger Allam<br>
+                            John Hurt<br>
+                            </p>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <div class="w-[80%]">
+                        <img src="../img/vpourvendetta.jpg" alt="img">
+
+                        <div class="flex items-center bg-[#d6d6d4] p-1">
+                            <svg class="w-4 h-4 text-orange-400 mr-1" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
+                                <path
+                                    d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z" />
+                            </svg>
+                            <p class="ml-2 text-sm font-bold text-gray-900 dark:text-black">4.95</p>
+                            <span class="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
+                            <a href="#"
+                                class="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-black">73
+                                reviews</a>
+                        </div>
+
+                    </div>
+                </article>
+
+            </section>
+
+            <section class="">
+                <article class="mb-5">
+                    <h2 class="text-2xl mb-5">Synopsis :</h2>
+                    <p class="">
+                        Londres, au 21ème siècle...
+                        Evey Hammond ne veut rien oublier de l'homme qui lui sauva la vie et lui permit de dominer ses peurs les plus lointaines. Mais il fut un temps où elle n'aspirait qu'à l'anonymat pour échapper à une police secrète omnipotente. Comme tous ses concitoyens, trop vite soumis, elle acceptait que son pays ait perdu son âme et se soit donné en masse au tyran Sutler et à ses partisans.
+                        Une nuit, alors que deux "gardiens de l'ordre" s'apprêtaient à la violer dans une rue déserte, Evey vit surgir son libérateur. Et rien ne fut plus comme avant.
+                        Son apprentissage commença quelques semaines plus tard sous la tutelle du mystérieux "V"..
+                        
+                    </p>
+                </article>
+
+                <article class="mb-5">
+                    <h2 class="text-2xl mb-5">Critique :</h2>
+
+
+
+                    <div
+                        class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-12 md:grid-cols-2">
+                        <figure
+                            class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:border-r dark:bg-[#2F3640] dark:border-gray-700">
+                            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">un classique</h3>
+                                <p class="my-4 lg:line-clamp-3 hover:line-clamp-none">
+                                  Cette adaptation attendue d'un classique de la bande-dessinée allie l'intégrité et l'audace de son propos à l'efficacité cinématographique d'in blockbuster hollywoodiens. Un cocktail détonnant, qui donne ici lieu à une vrai réussite.
+ La critique complète est disponible sur le site <a href="http://www.ecranfantastique.com" target="_blank">L'Ecran Fantastique</a>
+
+                                </p>
+                                <button></button>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center space-x-3">
+                                <img class="rounded-full w-9 h-9"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/karen-nelson.png"
+                                    alt="profile picture">
+                                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                    <div>Emmanuel Denis</div>
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">Critiqueur pro</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-tr-lg dark:bg-[#2F3640] dark:border-gray-700">
+                            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Merci</h3>
+                                <p class="my-4 lg:line-clamp-3 hover:line-clamp-none">
+                                    Une réussite tant dans la forme que dans le fond, qui ménage par ailleurs des moments de drôlerie irrésistibles (...) et qui, surtout résiste au tout-spectacle décérébré au profit d'un message radicalement humaniste (...)
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center space-x-3">
+                                <img class="rounded-full w-9 h-9"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/roberta-casas.png"
+                                    alt="profile picture">
+                                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                    <div>Gregory Alexandre</div>
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">Rock</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-bl-lg md:border-b-0 md:border-r dark:bg-[#2F3640] dark:border-gray-700">
+                            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">grande surprise</h3>
+                                <p class="my-4 lg:line-clamp-3 hover:line-clamp-none">
+                                    (...) "V pour vendetta" est une réussite presque totale, un petit bijou atteignant des sommets dans le genre politiquement incorrect, ce qui est chose rare pour un film à gros budget.
+                                     La critique complète est disponible sur le site <a href="https://www.avoir-alire.com/v-pour-vendetta-la-critique-test-dvd" target="_blank">aVoir-aLire.com</a>
+                                    
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center space-x-3">
+                                <img class="rounded-full w-9 h-9"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/jese-leos.png"
+                                    alt="profile picture">
+                                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                    <div>Sébastien Mauge</div>
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">Spam</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure
+                            class="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-br-lg dark:bg-[#2F3640] dark:border-gray-700">
+                            <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
+                                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Mieux que prévu</h3>
+                                <p class="my-4 lg:line-clamp-3 hover:line-clamp-none">
+                                    Le pire était à craindre, mais finalement Rupert Sanders signe une adaptation
+                                    respectueuse, dans
+                                    son fond et dans son rythme, du film de Mamoru Oshii qui, si il en reprend les plans
+                                    les plus
+                                    iconiques, en réécrit l’intrigue en se centrant davantage sur son héroïne et sa
+                                    quête
+                                    d’identité. Il réalise un beau et bon film de science-fiction.
+                                </p>
+                            </blockquote>
+                            <figcaption class="flex items-center justify-center space-x-3">
+                                <img class="rounded-full w-9 h-9"
+                                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/joseph-mcfall.png"
+                                    alt="profile picture">
+                                <div class="space-y-0.5 font-medium dark:text-white text-left">
+                                    <div>Joseph McFall</div>
+                                    <div class="text-sm text-gray-500 dark:text-gray-400">Le boss</div>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+            </section>
+        </main>
+
+    </div>
+
+
+    <footer
+        class="w-full shadow sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-[#7587bf] antialiased">
+        <p class="mb-4 text-sm text-center text-gray-800 dark:text-gray-800 sm:mb-0">
+            Site réalisé par Damien MAGINOT – afpa 2023
+        </p>
+        <div class="flex justify-center items-center space-x-1">
+            <a href="#" data-tooltip-target="tooltip-facebook"
+                class="inline-flex justify-center p-2 text-gray-800 rounded-lg cursor-pointer dark:text-gray-800 dark:hover:text-black hover:text-[#2f3640] hover:bg-gray-100 dark:hover:bg-[#F2E205]">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 8 19">
+                    <path fill-rule="evenodd"
+                        d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <div id="tooltip-facebook" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-[#7587bf] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Like us on Facebook
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="#" data-tooltip-target="tooltip-twitter"
+                class="inline-flex justify-center p-2 text-gray-800 rounded-lg cursor-pointer dark:text-gray-800 dark:hover:text-black hover:text-[#2f3640] hover:bg-gray-100 dark:hover:bg-[#F2E205]">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                    viewBox="0 0 20 20">
+                    <path fill="currentColor"
+                        d="M12.186 8.672 18.743.947h-2.927l-5.005 5.9-4.44-5.9H0l7.434 9.876-6.986 8.23h2.927l5.434-6.4 4.82 6.4H20L12.186 8.672Zm-2.267 2.671L8.544 9.515 3.2 2.42h2.2l4.312 5.719 1.375 1.828 5.731 7.613h-2.2l-4.699-6.237Z" />
+                </svg>
+                <span class="sr-only">Twitter</span>
+            </a>
+            <div id="tooltip-twitter" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-[#7587bf] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Follow us on Twitter
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="https://github.com/arkunis/" data-tooltip-target="tooltip-github"
+                class="inline-flex justify-center p-2 text-gray-800 rounded-lg cursor-pointer dark:text-gray-800 dark:hover:text-black hover:text-[#2f3640] hover:bg-gray-100 dark:hover:bg-[#F2E205]">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Github</span>
+            </a>
+            <div id="tooltip-github" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-[#7587bf] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Star us on GitHub
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+            <a href="#" data-tooltip-target="tooltip-dribbble"
+                class="inline-flex justify-center p-2 text-gray-800 rounded-lg cursor-pointer dark:text-gray-800 dark:hover:text-black hover:text-[#2f3640] hover:bg-gray-100 dark:hover:bg-[#F2E205]">
+                <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                    viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                        d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                        clip-rule="evenodd" />
+                </svg>
+                <span class="sr-only">Dribbble</span>
+            </a>
+            <div id="tooltip-dribbble" role="tooltip"
+                class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-[#7587bf] rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+                Follow us on Dribbble
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

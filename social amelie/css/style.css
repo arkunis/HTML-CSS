@@ -1,0 +1,724 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* divers */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* fin divers */
+
+/* header */
+header {
+    background-color: #3498db;
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+
+}
+
+.logoplusautre {
+    display: flex;
+    width: 100%;
+}
+
+.centrer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    width: 70%;
+    margin-bottom: 2%;
+}
+
+.recherche {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+select {
+    width: 25%;
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.5);
+}
+
+.submitsearch {
+    padding: 0.5%;
+    box-shadow: 5px 6px 3px rgba(0, 0, 0, 0.5);
+    background-color: #46a2f1 !important;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.socialmelie {
+    width: 100%;
+    height: auto;
+}
+
+/* fin header */
+
+
+/* main */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.creamlink {
+    font-size: small;
+}
+
+.creamlink>a:hover {
+    color: #46a2f1;
+}
+
+main>aside {
+    min-width: 15%;
+    background-color: #3498db;
+    display: flex;
+    justify-content: start;
+    padding: 1%;
+    line-height: 50px;
+}
+
+main>aside>.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main>aside>.navbar>ul>li {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+main>aside>.navbar>ul>li>a {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: aliceblue;
+    padding: 5%;
+    padding-left: 40%;
+    padding-right: 40%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+}
+
+main>aside>.navbar>ul>li>a:hover {
+    padding-left: 65%;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 1);
+}
+
+.topnav {
+    display: none;
+}
+
+main>section {
+    padding: 1%;
+}
+
+/* grandebanner */
+.grandebanner {
+    padding: 1%;
+    display: flex;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    border: 1px solid grey;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+}
+
+.positiongrandebanner {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+}
+
+.imggrandbanner {
+    width: 20%;
+}
+
+/* fin grande banner */
+
+
+/* save section */
+.save {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.save>h2{
+    display: flex;
+    flex-basis: 100%;
+    width: 100%;
+   justify-content: center;
+   margin-bottom: 3%;
+}
+.row{
+    display: flex;
+    gap:5%;
+}
+
+.row>article {
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carre {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border: 2px solid black;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    position: relative;
+    margin-left: 7%;
+    top: -10%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+}
+
+.cards>h2 {
+    margin: 0;
+}
+
+.row>article>button {
+    padding: 3%;
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border: none;
+    text-align: left;
+}
+
+.row>article>button>a {
+    color: #3498db;
+}
+
+.row>article>.cards>p {
+    margin-bottom: 3%;
+}
+
+/* Fin save section */
+
+/* stats section */
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+    align-items: center;
+}
+
+.stats>article {
+    width: 50%;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circle-svg {
+    display: block;
+    margin: 10px auto;
+    max-height: 270px;
+}
+
+.circle-svg text {
+    text-align: center;
+    color: black;
+    font-size: 5.5px
+}
+
+.circle-svg path.percent {
+    stroke: #3498db;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+.circle-svg path.percent2 {
+    stroke: #f67159;
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+.circle-svg path.around {
+    stroke: #c4c4c4;
+    fill: none;
+    stroke-width: 2.8;
+}
+
+.statistiques {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stastexte {
+    width: 80%;
+    padding: 0.5%;
+    margin: 0;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+
+.bande1 {
+    width: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
+    float: left;
+    border: 3px solid #f67159;
+    border-radius: 12px;
+}
+
+.bande2 {
+    width: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
+    float: left;
+    border: 3px solid #3498db;
+    border-radius: 12px;
+}
+
+.bande3 {
+    width: 10%;
+    margin-right: 4%;
+    margin-left: 4%;
+    float: left;
+    border: 3px solid #a3a3a3;
+    border-radius: 12px;
+}
+
+.profil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.7);
+    padding: 1%;
+    margin-bottom: 3%;
+}
+
+.imageettexte {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-bottom: 3%;
+}
+
+.iconesocial {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+}
+
+.iconesocial>a {
+    color: black;
+}
+
+.iconesocial>a:hover {
+    color: #3498db;
+}
+
+.buttonpascool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.petitboutonvraimentchiant {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    border-radius: 12px;
+    padding: 1%;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Fin stats section */
+
+/* Ils en parlent */
+.ilsenparlent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+}
+
+.ilsenparlent>article {
+    width: 49%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2%;
+}
+
+.articlepasfoufou {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    gap: 4%
+}
+
+.articlepasfoufou>img {
+    clip-path: ellipse(35% 50%);
+}
+
+.petitbouttonquicasselescouilles {
+    display: flex;
+    width: 15%;
+    padding: 0.5%;
+    border-radius: 12px;
+    justify-content: center;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 3%;
+}
+
+/* Fin Ils en parlent */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 1%;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    /* header */
+    .logoplusautre {
+        display: flex;
+        justify-content: center;
+    }
+
+    .centrer {
+        display: none;
+    }
+
+    /* fin header */
+
+    /* main */
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .creamlink {
+        font-size: small;
+    }
+
+    .creamlink>a:hover {
+        color: #46a2f1;
+    }
+
+    main>aside {
+        min-width: 15%;
+        background-color: #3498db;
+        display: flex;
+        justify-content: start;
+        padding: 1%;
+        line-height: 50px;
+    }
+
+    main>aside>.navbar {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main>aside>.navbar>ul>li {
+        width: 100%;
+        margin-bottom: 3%;
+    }
+
+    main>aside>.navbar>ul>li>a {
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        background-color: aliceblue;
+        padding: 5%;
+        padding-left: 40%;
+        padding-right: 40%;
+        box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    /* menu burger */
+    #desktop {
+        display: none;
+    }
+
+    /* Style the navigation menu */
+    .topnav {
+        overflow: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    /* Hide the links inside the navigation menu (except for logo/home) */
+    .topnav #myLinks {
+        display: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .lien {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        gap: 10%;
+        color: white;
+    }
+
+    /* Style navigation menu links */
+    .topnav a {
+        color: rgb(255, 255, 255);
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* Style the hamburger menu */
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 8%;
+        zoom: 150%
+    }
+
+
+    /* Fin menu burger */
+
+    /* grandebanner */
+    .grandebanner {
+        padding: 1%;
+        display: flex;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        margin-bottom: 3%;
+        border: 1px solid grey;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    }
+
+    /* fin grandbanner */
+
+/* save section */
+.save {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+.circle-svg {
+    display: block;
+    margin: 10px auto;
+    max-height: 200px;
+}
+.save>h2{
+    margin-bottom: 7%;
+}
+.save>article {
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 1);
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.6);
+    margin-bottom: 8%;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2%;
+}
+/* Fin save section */
+
+/* stats */
+/* stats section */
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4%;
+    align-items: center;
+}
+.stats>article {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.statistiques{
+    padding: 2%;
+}
+
+.stastexte {
+    width: 100%;
+    padding: 0.5%;
+    margin: 0;
+    border: 2px solid;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+}
+.profil {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.7);
+    padding: 1%;
+    margin-bottom: 3%;
+}
+.buttonpascool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Fin stats */
+
+/* Ils en parlent */
+.ilsenparlent {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.ilsenparlent>article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.8);
+    margin-bottom: 2%;
+}
+
+
+.petitbouttonquicasselescouilles {
+    display: flex;
+    width: 15%;
+    padding: 0.5%;
+    border-radius: 12px;
+    justify-content: center;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 3%;
+}
+/* Fin Ils en parlent */
+}
+
+@media screen and (max-width:600px) {
+    
+        .lien {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            margin: 0;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5%;
+            color: white;
+            margin-left: -8%;
+        }
+        .topnav #myLinks {
+            display: none;
+            width: 100%;
+            margin: 0;
+        }
+    .row{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15%;
+    }
+    .circle-svg {
+        display: block;
+        margin: 10px auto;
+        max-height: 230px;
+    }
+
+        /* Style the hamburger menu */
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 7%;
+            zoom: 150%
+        }
+
+        .petitbouttonquicasselescouilles {
+            display: flex;
+            width: 20%;
+            padding: 0.5%;
+            border-radius: 12px;
+            justify-content: center;
+            box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.7);
+            margin-bottom: 3%;
+        }
+
+}
+
+@media screen and (max-width:320px) {
+    .lien {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5%;
+        color: white;
+        margin-left: -12%;
+    }
+    
+}
